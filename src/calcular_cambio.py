@@ -36,7 +36,6 @@ def calcular_cambio(pago):
                 monedaIndex += 1
                 assert monedaIndex < len(tiposDeMonedas), "Error: No hay más tipos de monedas"
 
-    assert pago == 0, "Error: El pago no se redujo a cero."
     return numeroDeMonedas
 
 

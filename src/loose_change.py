@@ -20,8 +20,8 @@ def loose_change(cents):
     change_dict = dict.fromkeys(coin_keys, 0)
 
     for coin in change:
-        for coin_name in wallet:
-            if wallet[coin_name] == coin:
+        for coin_name, value in wallet.items():
+            if value == coin:
                 change_dict[coin_name] += 1
 
     return change_dict
